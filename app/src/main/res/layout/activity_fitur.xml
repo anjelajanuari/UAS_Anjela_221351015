@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvJudulFitur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur Aplikasi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Deskripsi Fitur -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#E3F2FD">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fitur Dataset SONAR MINE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dataset SONAR MINE memiliki 60 fitur numerik untuk setiap data, yang masing-masing mewakili energi pantulan sinyal sonar dalam rentang frekuensi berbeda. Fitur-fitur ini diberi label:\n- Attribute_1 sampai Attribute_10\n\nSetiap fitur menunjukkan intensitas energi dari sinyal sonar yang dipantulkan pada frekuensi tertentu. Nilai-nilai ini diukur dan dinormalisasi agar berada dalam rentang 0.0 sampai 1.0.\n\nContoh fitur:\n- Attribute_1 → Energi pantulan pada frekuensi ke-1\n- Attribute_2 → Energi pantulan pada frekuensi ke-2\n...\n- Attribute_10 → Energi pantulan pada frekuensi ke-10"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#555555" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tujuan Penggunaan -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFDE7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tujuan Penggunaan Fitur"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model Machine Learning menggunakan semua fitur ini sebagai input untuk memprediksi jenis objek (batu atau ranjau) berdasarkan karakteristik pantulan sonar."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word"
+                    android:textColor="#555555" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

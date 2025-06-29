@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Deskripsi -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFF9F9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="SONAR MINE adalah aplikasi berbasis machine learning yang dirancang untuk mendeteksi dan mengklasifikasikan objek bawah laut berdasarkan sinyal sonar. Aplikasi ini memanfaatkan model pembelajaran buatan untuk membedakan antara dua jenis objek utama, yaitu batu (rock) dan ranjau (mine), berdasarkan fitur-fitur numerik dari sinyal yang ditangkap."
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:justificationMode="inter_word"
+                android:textColor="#444444" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Link dataset -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#EFF6FF">
+
+            <TextView
+                android:id="@+id/tvLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="16dp"
+                android:text="Lihat Dataset: https://www.kaggle.com/datasets/mayurdalvi/sonar-mine-dataset"
+                android:textColor="#1E88E5"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Teknologi -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFF9F0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teknologi yang Digunakan"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Machine Learning Model: Artificial Neural Network (ANN)\n- Model Format: TensorFlow Lite (.tflite)\n- Input Data: 10 fitur numerik\n- Prediksi Real-time dan Offline"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tujuan Aplikasi -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#F1F8E9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tujuan Aplikasi"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Membantu simulasi pendeteksian ranjau dalam pendidikan dan pelatihan.\n- Memberikan pemahaman tentang klasifikasi berbasis AI.\n- Contoh implementasi machine learning di Android."
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Pengembang -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#ECEFF1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengembang"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aplikasi ini dikembangkan sebagai bagian dari proyek pembelajaran dan demonstrasi teknologi AI dan Android Development, dengan fokus pada klasifikasi data berbasis suara sonar."
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:lineSpacingExtra="4dp"
+                    android:justificationMode="inter_word" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created by ANJELA"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"
+                    android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
